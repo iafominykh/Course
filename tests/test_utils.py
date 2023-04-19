@@ -1,6 +1,6 @@
 from utils.utils import load_json, executed_operation, formated_data, format_date, mask_card
 
-
+#
 def test_load_json():
     list_ = [
         {
@@ -21,7 +21,7 @@ def test_load_json():
     ]
     assert load_json('test.json') == list_
 
-
+#
 def test_executed_operation():
     list_ = [
         {
@@ -57,18 +57,18 @@ def test_executed_operation():
 
     assert executed_operation(list_) == sorted_list
 
-
+#
 def test_format_date():
     assert format_date("2018-06-12T07:17:01.311610") == "12.06.2018"
     assert format_date("2019-07-12T08:11:47.735774") == "12.07.2019"
 
-
+#
 def test_mask_card():
     assert mask_card("Счет 90562872508279542248") == "Счет 9056"
     assert mask_card("MasterCard 8532498887072395") == "MasterCard 8532 49** **** 2395"
     assert mask_card("МИР 8201420097886664") == "МИР 8201 42** **** 6664"
 
-
+#
 def test_formated_data():
     dict_1 = {
         "id": 988276204,
