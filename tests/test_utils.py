@@ -1,4 +1,5 @@
-from utils import load_json, executed_operation, formated_data, format_date, mask_card
+from utils.utils import load_json, executed_operation, formated_data, format_date, mask_card
+
 
 def test_load_json():
     list_ = [
@@ -60,4 +61,3 @@ def test_executed_operation():
 def test_format_date():
     assert format_date('2018-10-14T08:21:33.419441') == '14.10.2018'
     assert format_date('2018-01-26T15:40:13.413061') == '26.01.2018'
-

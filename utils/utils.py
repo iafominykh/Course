@@ -1,6 +1,6 @@
 import json
 
-JSON_FILE = 'operations.json'
+JSON_FILE = '../operations.json'
 
 
 def load_json():
