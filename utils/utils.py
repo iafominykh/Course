@@ -1,8 +1,6 @@
 import json
 
 
-
-
 def load_json(path):
     with open(path, 'r', encoding='utf-8') as file:
         data = json.load(file)
@@ -38,5 +36,3 @@ def mask_card(card):
     if card[0] == 'Счет':
         return f'{card[0]} {card[-1][:4]}'
     return f'{" ".join(card[:-1])} {card[-1][:4]} {card[-1][4:6]}** **** {card[-1][-4:]}'
-
-

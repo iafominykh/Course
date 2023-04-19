@@ -1,4 +1,4 @@
-from utils import load_json, executed_operation, formated_data
+from utils.utils import load_json, executed_operation, formated_data
 
 JSON_FILE = '../operations.json'
 
