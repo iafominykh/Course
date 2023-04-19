@@ -1,10 +1,10 @@
 import json
 
-JSON_FILE = '../operations.json'
 
 
-def load_json():
-    with open(JSON_FILE, 'r', encoding='utf-8') as file:
+
+def load_json(path):
+    with open(path, 'r', encoding='utf-8') as file:
         data = json.load(file)
     return data
 
